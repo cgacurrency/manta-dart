@@ -5,7 +5,6 @@ import "dart:io";
 import 'package:decimal/decimal.dart';
 import 'package:mockito/mockito.dart';
 import 'package:mqtt_client/mqtt_client.dart';
-import 'package:mqtt_client/mqtt_server_client.dart';
 import "package:test/test.dart" show equals, expect, isNotNull, isNull,
         test;
 
@@ -16,7 +15,7 @@ import "package:manta_dart/messages.dart";
 const PRIVATE_KEY = "test/certificates/root/keys/test.key";
 const CERTIFICATE = "test/certificates/root/certs/test.crt";
 
-class MockClient extends Mock implements MqttServerClient {}
+class MockClient extends Mock implements MqttClient {}
 
 MockClient mock_it() {
   final client = MockClient();
