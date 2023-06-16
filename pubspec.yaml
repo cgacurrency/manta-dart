@@ -15,7 +15,7 @@ dependencies:
   logging: ^0.11.3+2
   pointycastle: ^1.0.0-rc4
   rsa_pkcs:
-    git: https://github.com/amaurel/rsa_pkcs.git
+    git: https://github.com/cgacurrency/rsa_pkcs
   async: ^2.2.0
 
 dev_dependencies:
